@@ -1,0 +1,70 @@
+.b-header{
+    font-family: $literaturnayaRegular;
+    background: url('/img/header/header_bg.png') no-repeat;
+    &_MP{
+        margin: 0;
+        padding: 30px 0 0 0;
+    }
+    
+    &__slogan{
+        width: 195px;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+    }
+    &__logo{
+        padding-left: 87px;
+    }
+    
+    
+    
+}
+.b-headerContent{
+        text-align: right;
+        height: 135px;
+        padding-top: 36px;
+        &__email{
+            p {
+                font-size: 19px;
+            }
+        }
+        &__phone{
+            p {
+                font-size: 39px;
+                color: #9ab50b;
+            }
+            span{
+                color: #9f9f9f;
+                &::before{
+                    content:url("/img/header/phone_icon.png");
+                    display: inline-block;
+                    width: 29px;
+                    height: 29px;
+                }
+            }
+        }
+        &__menu{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 19px;
+            &>ul{
+                display: flex;
+                li{
+                    font-family: $literaturnayaRegular;
+                    letter-spacing: -1.1px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin: -8px 0 0 0;
+                    padding: 8px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #a1be07;
+                        border-radius: 6px;
+                    }
+                }
+            }
+
+        }
+
+    
+}
+

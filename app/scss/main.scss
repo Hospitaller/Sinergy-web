@@ -1,0 +1,27 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "media";
+
+@import "../scss/blocks/HEADER/header";
+
+/* Пример респонсив
+@include media-breakpoint-down(lg) {
+    font-size: 12px;
+    padding: 0 !important;
+}
+*/
+
+/* Кастом респонсив
+@include respondCustom(768px, 1300px) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+*/
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px 80px 0 0;
+}
