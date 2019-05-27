@@ -4,6 +4,7 @@
 @import "media";
 
 @import "../scss/blocks/HEADER/header";
+@import "../scss/blocks/MAINCONTENT/mainContent";
 
 /* Пример респонсив
 @include media-breakpoint-down(lg) {
@@ -24,4 +25,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 2px 80px 0 0;
+    @include respondCustom(0px, 992px) {
+        padding: 0;
+    }
 }
