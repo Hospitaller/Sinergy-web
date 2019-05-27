@@ -3,7 +3,7 @@
     background: url('/img/header/header_bg.png') no-repeat;
     &_MP{
         margin: 0;
-        padding: 30px 0 0 0;
+        padding: 30px 0 27px 0;
     }
     
     &__slogan{
@@ -62,9 +62,18 @@
                     }
                 }
             }
-
         }
-
-    
 }
-
+.b-sideMenu{
+    
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 53px;
+        background: url('/img/header/menu_bg.png') no-repeat;
+        &>ul{
+            display: flex;
+        }
+    }
+}

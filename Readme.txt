@@ -1,6 +1,5 @@
-﻿Стартовый шаблон верстки.
-
-    Особенности:
+Запуск:
+npm i => gulp
 
     - Gulp 4
     - Bootstrap 4
@@ -8,6 +7,3 @@
     - SASS
     - Autoprefixer
     - Live Reload
-
-Запуск:
-npm i => gulp
