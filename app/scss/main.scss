@@ -5,6 +5,7 @@
 
 @import "../scss/blocks/HEADER/header";
 @import "../scss/blocks/MAINCONTENT/mainContent";
+@import "../scss/blocks/MAINCONTENT/consultation";
 
 /* Пример респонсив
 @include media-breakpoint-down(lg) {
@@ -21,6 +22,11 @@
     max-width: 50%;
 }
 */
+input, textarea {
+
+    outline:none !important;
+
+}
 body{
     max-width: 1200px;
     margin: 0 auto;
@@ -29,3 +35,4 @@ body{
         padding: 0;
     }
 }
+
