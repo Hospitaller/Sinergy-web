@@ -1,0 +1,55 @@
+.b-map{
+  height: 543px;
+  width: 100%;
+  background: url("/img/map/map_bg.png") center no-repeat;
+  background-size: cover;
+  padding: 0 40px;
+  &__bodyMap{
+    width: 486px;
+    height: 486px;
+    background: url("/img/map/map_round.png") center no-repeat;
+    @include respondCustom(0px, 992px) {
+      width: inherit;
+      margin-top: 50px;
+    }
+  }
+}
+.b-map__address{
+  margin-left: 88px;
+  @include respondCustom(0px, 992px) {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+.b-map__bodyMap{
+
+}
+.b-address__title{
+  display: flex;
+  width: 325px;
+  font-family: $literaturnayaRegular;
+  font-size: 42px;
+  color: #8ba30c;
+  border-bottom: 3px solid #b0cb1f;
+  padding-bottom: 10px;
+  &:before{
+    content: url("/img/map/address_icon.png") ;
+    display: block;
+    width: 28px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  @include respondCustom(0px, 992px) {
+    width: inherit;
+    justify-content: center;
+  }
+}
+.b-address__text{
+  font-family: $literaturnayaItalic;
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: bolder;
+  @include respondCustom(0px, 992px) {
+    text-align: center;
+  }
+}

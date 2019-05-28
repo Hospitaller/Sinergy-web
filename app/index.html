@@ -28,7 +28,7 @@
 		<header>
 			<div class="row no-gutters align-items-center b-header b-header_MP"> <!--HEADER-->
 				<div class="col-xl-3 col-lg-4">
-					<div class="b-header__logo">
+					<div class="b-header__logo" role="banner">
 						<img src="./img/header/logo.png" alt="Логотип компании">
 						<p class="b-header__slogan">
 							Центр развития и творчества 
@@ -48,7 +48,7 @@
 								<span>+7 (846)</span>990-61-03
 							</p>
 						</div>
-						<div class="b-headerContent__menu">
+						<div class="b-headerContent__menu" role="navigation">
 							<ul>
 								<li>
 									<a href = "#">Главная</a>
@@ -123,9 +123,9 @@
 			<div class="row no-gutters align-items-center b-mainContent"><!--MAIN CONTENT-->
 				<div class="col-xl-12">
 					<div class="b-mainContent__title">
-						<p>
+						<h1>
 							Направления
-						</p>
+						</h1>
 					</div>
 					<div class="b-mainContent__text">
 						<p>
@@ -140,7 +140,7 @@
 			
 			<div class="row no-gutters align-items-center b-mainContentWraper"><!--MAIN CONTENT UNIT WRAPER-->
 				<div class="col-xl-4 col-lg-6 col-md-6">
-					<div class="b-mainContentUnit">
+					<div class="b-mainContentUnit"  role="article">
 						<div class="b-mainContentUnit__image">
 							<img src = "/img/mainContent/contentUnit_1.png" alt = "Мода и стиль">
 						</div>
@@ -155,7 +155,7 @@
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6">
-					<div class="b-mainContentUnit">
+					<div class="b-mainContentUnit" role="article">
 						<div class="b-mainContentUnit__image">
 							<img src = "/img/mainContent/contentUnit_2.png" alt = "Красота и здоровье">
 						</div>
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6">
-					<div class="b-mainContentUnit">
+					<div class="b-mainContentUnit" role="article">
 						<div class="b-mainContentUnit__image">
 							<img src = "/img/mainContent/contentUnit_3.png" alt = "Финансовая грамотность">
 						</div>
@@ -187,7 +187,7 @@
 				</div>
 
 				<div class="col-xl-4 col-lg-6 col-md-6 my-5">
-					<div class="b-mainContentUnit">
+					<div class="b-mainContentUnit" role="article">
 						<div class="b-mainContentUnit__image">
 							<img src = "/img/mainContent/contentUnit_4.png" alt = "Театр и выставки">
 						</div>
@@ -202,7 +202,7 @@
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6 my-5">
-					<div class="b-mainContentUnit">
+					<div class="b-mainContentUnit" role="article">
 						<div class="b-mainContentUnit__image">
 							<img src = "/img/mainContent/contentUnit_5.png" alt = "Творчество">
 						</div>
@@ -217,7 +217,7 @@
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6 my-5">
-					<div class="b-mainContentUnit">
+					<div class="b-mainContentUnit" role="article">
 						<div class="b-mainContentUnit__image">
 							<img src = "/img/mainContent/contentUnit_6.png" alt = "Поездки и экскурсии">
 						</div>
@@ -232,7 +232,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row no-gutters align-items-center b-consultation">
+			<div class="row no-gutters align-items-center b-consultation" role="article">
 				<div class="col-xl-6">
 					<div class="b-consultation__info">
 						<p class="b-consultationInfo__title">
@@ -244,7 +244,7 @@
 					</div>
 				</div>
 				<div class="col-xl-6">
-					<div class="b-consultation__form">
+					<div class="b-consultation__form" role="form">
 						<form>
 							<div class="form-row">
 								<div class="form-group col-md-12 b-consultation__formUnit">
@@ -257,7 +257,11 @@
 							<div class="form-row">
 								<div class="form-group col-md-12 b-consultation__formUnit">
 									<label for="inputPhone" class="b-consultation__fromLabel">Номер телефона:<span> *</span></label>
-									<input type="phone" class="b-consultation__formControl b-consultation__fromInput" id="inputPhone" placeholder="">
+									<input type="tel"
+										   title='Format: +9(999)9999999'
+										   pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+										   minlength="11" maxlength="13"
+										   class="b-consultation__formControl b-consultation__fromInput" id="inputPhone" placeholder="">
 									
 								</div>
 							</div>
@@ -273,8 +277,142 @@
 					</div>
 				</div>
 			</div>
+			<div class="row no-gutters align-items-center b-map" role="article">
+				<div class="col-xl-6 col-lg-6">
+					<div class="b-map__bodyMap">
+
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<div class="b-map__address">
+						<div class="b-address__title">
+							<p>
+								Наш адрес
+							</p>
+						</div>
+						<div class="b-address__text">
+							<p>
+								г. Самара, Московское шоссе 41, 7<br>этаж, офис 710
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		</main>
+		<footer>
+			<div class="row no-gutters align-items-center b-footer " role="contentinfo">
+				<div class="col-xl-3 col-lg-6 col-md-6 col- align-self-start">
+					<div class="b-footer__menu">
+						<div class="b-footer__title">
+							<p>
+								МЕНЮ
+							</p>
+						</div>
+						<ul>
+							<li>
+								<a href = "#">Главная</a>
+							</li>
+							<li>
+								<a href = "#">О нас</a>
+							</li>
+							<li>
+								<a href = "#">Мероприятия и направления</a>
+							</li>
+							<li>
+								<a href = "#">Новости</a>
+							</li>
+							<li>
+								<a href = "#">Фотогалерея</a>
+							</li>
+							<li>
+								<a href = "#">Партнеры</a>
+							</li>
+							<li>
+								<a href = "#">Контакты</a>
+							</li>
+							<li>
+								<a href = "#">Карта сайта</a>
+							</li>
+							<li>
+								<a href = "#">Политика конфиденциальности</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-md-6 col- align-self-start">
+					<div class="b-footer__direction">
+						<div class="b-footer__title">
+							<p>
+								НАПРАВЛЕНИЯ
+							</p>
+						</div>
+						<ul>
+							<li>
+								<a href = "#">Мода и стиль</a>
+							</li>
+							<li>
+								<a href = "#">Красота и здоровье</a>
+							</li>
+							<li>
+								<a href = "#">Финансовая грамотность</a>
+							</li>
+							<li>
+								<a href = "#">Театр и выставки</a>
+							</li>
+							<li>
+								<a href = "#">Творчество</a>
+							</li>
+							<li>
+								<a href = "#">Поездки и экскурсии</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-md-6 col- align-self-start">
+					<div class="b-footerContacts">
+						<div class="b-footerContacts__title">
+							<p>
+								КОНТАКТЫ
+							</p>
+						</div>
+						<div class="b-footerContacts__address">
+							<p>
+								г. Самара, Московское шоссе<br>41, 7 этаж, офис 710
+							</p>
+						</div>
+						<div class="b-footerContacts__phone">
+							<p>
+								+7 (846)<span> 990-61-03</span><br>
+								+7 (927)<span> 608-09-29</span><br>
+								+7 (927)<span> 260-61-03</span>
+							</p>
+						</div>
+						<div class="b-footerContacts__email">
+							<p>
+								marswell@yandex.ru
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-md-6 col- align-self-start">
+					<div class="b-footerLogo">
+						<div class="b-footerLogo__logo">
+							<img src="./img/header/logo.png" alt="Логотип компании">
+							<p class="b-footerLogo__slogan">
+								Центр развития и творчества
+							</p>
+						</div>
+						<div class="b-footerLogo__copy">
+							<p>
+								© 2010 -2018 АНО «ЦРТ<br>«СИНЕРГИЯ»
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	
 	</div>
 	<script src="js/jquery.min.js"> </script>
