@@ -7,11 +7,11 @@
     &__form{
         background-color: #fff;
         padding: 40px;
-        .recipientFromWrap {
+        .b-consultation__formUnit {
             display: flex;
             flex-direction: column;
         }
-        .recipientFromLabel {
+        .b-consultation__fromLabel {
             font-family: $literaturnayaRegular;
             font-size: 20px;
             text-align: center;
@@ -19,15 +19,14 @@
             & span{
                 color: red;
             }
-            
         }
-        .form-control {
+        .b-consultation__formControl {
             outline: none;
             background-color: #f7f7f7;
             border: none;
             border-radius: 0;
         }
-        .recipientFromInput {
+        .b-consultation__fromInput {
             height: 56px;
             border: none;
             background-color: #f7f7f7;
@@ -43,7 +42,7 @@
                 color: #B5C4CB;
             }
         }
-        .recipientFromBtn {
+        .b-consultation__fromBtn {
 
             background: linear-gradient(to right,  #b0cb1f 0%,#ffffff 50%,#b0cb1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             box-shadow: none;
@@ -61,70 +60,59 @@
             }
         }
     }
-}
+    &__info{
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 
-
-
-/*
-.recipientWrap {
-    font-family: $literaturnayaRegular;
-    padding: 0 50px 30px;
-
-    .recipient {
-
-        .recipientTitle {
-            font-family: $literaturnayaRegular;;
-            font-size: 18px;
-            line-height: 30px;
-            margin-bottom: 30px;
+        .b-consultationInfo__title{
+            font-family: $literaturnayaRegular;
+            font-size: 36px;
+            color: #889e16;
+            text-align: center;
+            margin-bottom: 15px;
         }
+        .b-consultationInfo__text{
+            font-family: $literaturnayaItalic;
+            text-align: center;
+            font-size: 20px;
 
-       
-
-        
-
-        
-
-        .recipientFromInput:focus~.recipientFromLabel,
-        .recipientFromLabel:focus {
-            color: #C4CFD5;
         }
-
-        .recipientFromInput {
-            background: #EEF9FF;
-            border-bottom: 2px solid #01A6FF;
-            border-radius: 0;
-            order: 1;
-
-            &:active,
-            &:focus {
-                box-shadow: none;
-                background: #F7F8FA;
-                border-bottom: 2px solid #000;
+        @include respondCustom(993px, 2000px) {
+             &:after{
+                 content: url("/img/mainContent/consult_arrow.png") ;
+                 display: block;
+                 width: 15px;
+                 height: 80px;
+                 position: absolute;
+                 right: 45px;
+             }
+         }
+        @include respondCustom(768px, 992px) {
+             &:after{
+                 content: url("/img/mainContent/consult_arrow_down.png") ;
+                 display: block;
+                 width: 15px;
+                 height: 80px;
+                 position: relative;
+                 right: -270px;
+                 top: 30px;
+             }
+         }
+        @include respondCustom(0px, 767px) {
+            &:after{
+                content: url("/img/mainContent/consult_arrow_down.png") ;
+                display: block;
+                width: 15px;
+                height: 80px;
+                position: absolute;
+                right: calc(50% + 22px);
+                top: 140px;
             }
-
-            &::placeholder {
-                color: #B5C4CB;
-            }
         }
 
-        .recipientFromBtn {
-            background: -moz-linear-gradient(left, #0145fe 0%, #c402ec 100%);
-            background: -webkit-linear-gradient(left, #0145fe 0%, #c402ec 100%);
-            background: linear-gradient(to right, #0145fe 0%, #c402ec 100%);
-            -webkit-box-shadow: 0px 19px 32px -10px rgba(1, 166, 255, 1);
-            -moz-box-shadow: 0px 19px 32px -10px rgba(1, 166, 255, 1);
-            box-shadow: 0px 19px 32px -10px rgba(1, 166, 255, 1);
-            font-family: $literaturnayaRegular;;
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-            color: #fff;
-            border: none;
-            margin: 50px auto;
-            padding: 10px 16px;
-        }
     }
 }
-*/

@@ -234,12 +234,12 @@
 			</div>
 			<div class="row no-gutters align-items-center b-consultation">
 				<div class="col-xl-6">
-					<div class="b-consultation__title">
-						<p>
+					<div class="b-consultation__info">
+						<p class="b-consultationInfo__title">
 							Консультация
 						</p>
-						<p>
-							По любому направлению для детей и взрослых
+						<p class="b-consultationInfo__text">
+							По любому направлению для<br> детей и взрослых
 						</p>
 					</div>
 				</div>
@@ -247,25 +247,28 @@
 					<div class="b-consultation__form">
 						<form>
 							<div class="form-row">
-								<div class="form-group col-md-12 recipientFromWrap">
-									<label for="inputName" class="recipientFromLabel">Как к Вам обращаться:<span> *</span></label>
-									<input type="text" class="form-control recipientFromInput" id="inputName" placeholder="Николай Владимирович">
+								<div class="form-group col-md-12 b-consultation__formUnit">
+									<label for="inputName" class="b-consultation__fromLabel">Как к Вам обращаться:<span> *</span></label>
+									<input type="text" class="b-consultation__formControl b-consultation__fromInput"
+										   id="inputName"
+										   placeholder="Николай Владимирович">
 								</div>
 							</div>
 							<div class="form-row">
-								<div class="form-group col-md-12 recipientFromWrap">
-									<label for="inputPhone" class="recipientFromLabel">Номер телефона:<span> *</span></label>
-									<input type="phone" class="form-control recipientFromInput" id="inputPhone" placeholder="">
+								<div class="form-group col-md-12 b-consultation__formUnit">
+									<label for="inputPhone" class="b-consultation__fromLabel">Номер телефона:<span> *</span></label>
+									<input type="phone" class="b-consultation__formControl b-consultation__fromInput" id="inputPhone" placeholder="">
 									
 								</div>
 							</div>
 							<div class="form-row">
-								<div class="form-group col-md-12 recipientFromWrap">
-									<label for="inputEmail4" class="recipientFromLabel">Направление:</label>
-									<input type="text" class="form-control recipientFromInput" id="inputEmail4" placeholder="">
+								<div class="form-group col-md-12 b-consultation__formUnit">
+									<label for="inputEmail4" class="b-consultation__fromLabel">Направление:</label>
+									<input type="text" class="b-consultation__formControl b-consultation__fromInput" id="inputEmail4" placeholder="">
 								</div>
 							</div>
-							<button type="submit" class="btn btn-primary recipientFromBtn"><span></span>Записаться</button>
+							<button type="submit" class="btn btn-primary b-consultation__fromBtn"><span></span>
+								Записаться</button>
 						</form>
 					</div>
 				</div>
