@@ -39,7 +39,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/js/common.js', // Always at the end
+		'app/js/common.js',
 	])
 	.pipe(concat('scripts.min.js'))
 	.pipe(gulp.dest('app/js'))

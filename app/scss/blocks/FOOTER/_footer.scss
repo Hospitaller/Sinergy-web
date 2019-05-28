@@ -1,94 +1,114 @@
+/*-|-FOOTER-|-*/
 .b-footer {
-padding: 0 40px;
-  &__title{
+  padding: 0 40px;
+
+  &__title {
     font-family: $literaturnayaRegular;
     font-size: 20px;
     color: #8ea709;
     margin-bottom: 20px;
   }
+
   &__menu, &__direction {
     padding-top: 50px;
-      ul li {
-        margin-bottom: 5px;
-        &:first-child{
-          a {
-            color: #697b0a;
-          }
-        }
-        a{
-          text-decoration: underline;
-          font-family: $literaturnayaRegular;
-          font-size: 14px;
-          color: #333333;
 
+    ul li {
+      margin-bottom: 5px;
+
+      &:first-child {
+        a {
+          color: #697b0a;
         }
       }
+
+      a {
+        text-decoration: underline;
+        font-family: $literaturnayaRegular;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+
     @include respondCustom(0px, 768px) {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   }
-  .b-footer__direction{
-    .b-footer__title{
+
+  .b-footer__direction {
+    .b-footer__title {
       color: #786da8;
     }
   }
-  .b-footerContacts{
+
+  .b-footerContacts {
     padding-top: 50px;
-    &__title{
+
+    &__title {
       font-family: $literaturnayaRegular;
       font-size: 20px;
       color: #ef7f1a;
       margin-bottom: 20px;
     }
-    &__address{
+
+    &__address {
       font-family: $literaturnayaRegular;
       color: #333333;
       font-size: 15px;
       margin-bottom: 20px;
     }
-    &__phone{
+
+    &__phone {
       font-family: $literaturnayaRegular;
       font-size: 23px;
       color: #333333;
       margin-bottom: 20px;
-      span{
+
+      span {
         color: #ef7f1a;
       }
     }
-    &__email{
+
+    &__email {
       font-family: $literaturnayaRegular;
       font-size: 15px;
       color: #333333;
     }
+
     @include respondCustom(0px, 768px) {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   }
-  .b-footerLogo{
+
+  /*-|-FOOTER LOGO-|-*/
+  .b-footerLogo {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 329px;
     border-left: 1px solid #DBDBDB;
     padding-top: 50px;
-    background: url("/img/footer/footer_bg.png") center no-repeat;
+    background: url("../img/footer/footer_bg.png") center no-repeat;
     background-size: cover;
-    &__slogan{
+
+    &__slogan {
       font-family: $literaturnayaRegular;
       font-size: 14px;
       margin-bottom: 30px;
     }
-    &__copy{
+
+    &__copy {
       text-align: center;
     }
+
     @include respondCustom(0px, 768px) {
       border: none;
     }
   }
+
   @include respondCustom(0px, 992px) {
     margin-top: 145px;
   }

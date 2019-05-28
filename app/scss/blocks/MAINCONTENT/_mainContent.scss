@@ -1,12 +1,15 @@
-.b-mainContent{
+/*-|-MAIN CONTENT-|-*/
+.b-mainContent {
   margin-top: 34px;
-  &__title{
+
+  &__title {
     font-family: $literaturnayaRegular;
     font-size: 36px;
     color: #93ae04;
     text-align: center;
   }
-  &__text{
+
+  &__text {
 
     font-family: $literaturnayaRegular;
     font-size: 18px;
@@ -15,7 +18,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    >p{
+
+    > p {
       margin: 12px 0;
       width: 544px;
       letter-spacing: -1.5px;
@@ -25,42 +29,48 @@
     }
   }
 }
-.b-mainContentWraper{
+
+.b-mainContentWraper {
   margin: 20px 0;
-  & .b-mainContentUnit{
+
+  & .b-mainContentUnit {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 268px;
     border-radius: 20px;
-    &__text{
+
+    &__text {
       display: flex;
       align-items: center;
       height: 72px;
       width: 300px;
-      background: url("/img/mainContent/contentUnit_bg.png") center no-repeat;
+      background: url("../img/mainContent/contentUnit_bg.png") center no-repeat;
       border-bottom: 5px solid #eff0f3;
       border-radius: 15px;
-      p{
+
+      p {
         font-family: $literaturnayaRegular;
         font-size: 22px;
       }
     }
-    &__icon{
+
+    &__icon {
       margin: 0 15px;
     }
+
     transition-duration: .3s;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
       transform: scale(1.1, 1.1);
       transform-origin: 50% 50%;
       transition-duration: .3s;
     }
+
     @include respondCustom(0px, 768px) {
       margin-bottom: 40px;
     }
   }
-
-
 }

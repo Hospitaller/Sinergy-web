@@ -1,4 +1,4 @@
-Запуск:
+Запуск DEV:
 npm i => gulp
 
     - Gulp 4
